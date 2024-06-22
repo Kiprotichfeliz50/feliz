@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+form{
+background-color: #fff;
+display:flex;
+flex-direction:column;
+padding:2vw 4vw;
+width:90%;
+max-width:600px;
+border-radius:10px;
+}
+form h3{
+color:#555;
+font-weight: 800;
+margin-bottom:20px;
+}
+form input,form textarea{
+border:0;
+margin:1opx 0;
+padding:20px;
+outline:none;
+background: #f5f5f5;
+font-size:16px;
+}
+form input:hover{outline:dotted;
+color:#c06b3e;}
+
+form textarea:hover{
+outline:dashed;
+color:#c06b3e;}
+form button {
+padding:15px;
+background:#ff5361;
+color:#fff;
+font-size:18px;
+border:0;
+outline:none;
+cursor:pointer;
+width:150px;
+margin:20px auto 0;
+border-radius:30px;
+
+}
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+<body>
+<!--get link fromsmtjs.com-->
+
+<div class="container_1">
+<form ><h3>get in touch</h3>
+<input type="text" id="name" placeholder="your name"required>
+ <input type="email" id="email" placeholder="enter email...."required>
+<input type="text" id="phone" placeholder="your phone no"required>
+<textarea name="" id="message"placeholder="how can we help you" rows="4"></textarea>
+<button type="submit">submit</button></form>
+
+</div>
+<a href="index.html" class="previous">&laquo; back</a>
+
+</div></header>
+<p>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique doloribus fugiat cum iusto quia explicabo at liber
+
+ error officiis eius?</p>
+<footer>
+mukwas accounts</footer>
+<!--get link fromsmtjs.com-->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+Email.send({
+    Host : "smtp.gmail.com",
+    Username : "username",
+    Password : "0111453384",
+    To : 'kiprotichfelix@52gmail.com',
+    From : "",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message sent successfull)
+);/*
+function sendEmail(){
+Email.send({
+HOST:"smtp.gmail.com",
+Username:"kiprotichfelix52@gmail.com",
+password:"password",
+To:"kiprotichfelix52@gmail.com",
+From:document.getElementById("email").value,
+subject:"new contact form Enquiry",
+Body:"name:"+ document.getElementById("name").value
++"<br> email:"+ document.getElementById("email").value
++"<br> phone no:"+ document.getElementById("phone").value
++"<br> message:"+ document.getElementById("message").value
+}).then(
+message=>alert(message sent successfull));}*/
+
+
+
+</script>
+ 
+ 
+</body>
+</html>
